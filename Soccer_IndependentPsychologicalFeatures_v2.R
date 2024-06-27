@@ -76,6 +76,41 @@ result <- t.test(tsa$CWI2scale, mu = 10); print(result)
 result <- t.test(tsa$CWI3scale, mu = 10); print(result)
 result <- t.test(tsa$CWI4scale, mu = 10); print(result)
 
+### (ONLY SWEDISH OR BRAZILIAN PLAYERS)
+## SWEDISH
+tsa_Swed <- tsa[tsa$Dataset == 1, ]
+#TMT
+result <- t.test(tsa_Swed$TMT2scale, mu = 10); print(result)
+result <- t.test(tsa_Swed$TMT3scale, mu = 10); print(result)
+result <- t.test(tsa_Swed$TMT4scale, mu = 10); print(result)
+#DF
+result <- t.test(tsa_Swed$DF1scale, mu = 10); print(result)
+result <- t.test(tsa_Swed$DF2scale, mu = 10); print(result)
+result <- t.test(tsa_Swed$DF3scale, mu = 10); print(result)
+#Stroop
+result <- t.test(tsa_Swed$CWI1scale, mu = 10); print(result)
+result <- t.test(tsa_Swed$CWI2scale, mu = 10); print(result)
+result <- t.test(tsa_Swed$CWI3scale, mu = 10); print(result)
+result <- t.test(tsa_Swed$CWI4scale, mu = 10); print(result)
+
+## BRAZILIAN
+tsa_Braz <- tsa[tsa$Dataset == 2, ]
+#TMT
+result <- t.test(tsa_Braz$TMT2scale, mu = 10); print(result)
+result <- t.test(tsa_Braz$TMT3scale, mu = 10); print(result)
+result <- t.test(tsa_Braz$TMT4scale, mu = 10); print(result)
+#DF
+result <- t.test(tsa_Braz$DF1scale, mu = 10); print(result)
+result <- t.test(tsa_Braz$DF2scale, mu = 10); print(result)
+result <- t.test(tsa_Braz$DF3scale, mu = 10); print(result)
+#Stroop
+result <- t.test(tsa_Braz$CWI1scale, mu = 10); print(result)
+result <- t.test(tsa_Braz$CWI2scale, mu = 10); print(result)
+result <- t.test(tsa_Braz$CWI3scale, mu = 10); print(result)
+result <- t.test(tsa_Braz$CWI4scale, mu = 10); print(result)
+
+
+
 ###### MANCOVAs COMPARING FOOTBALL PLAYERS AND CONTROLS (BRAZILIAN SAMPLE)
 
 setwd("/Users/au550322/Documents/AarhusUniversitet/CarlsbergFoundation_Oxford_PaperWork/Research/PredragPetrovic/Alberto_Predrag_Torbjorn/")
